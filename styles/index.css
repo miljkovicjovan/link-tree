@@ -13,6 +13,14 @@ body, html {
     height: 100%;
     background: url(../resources/images/phone-background.png);
 }
+@media only screen and (min-width: 500px) {
+    body {
+        background: url(../resources/images/pc-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 
 /*----- PROFILE -----*/
 .profile {
@@ -28,4 +36,18 @@ body, html {
     color: rgb(255, 255, 255);
     padding-top: 1.8rem;
     font-size: 1.7rem;
+}
+@media only screen and (min-width: 500px) {
+    .profile {
+        flex-direction: row;
+    }
+    .profile img {
+        width: 10%;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    .profile h1 {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
 }
