@@ -35,8 +35,8 @@ body, html {
     align-items: center;
 }
 .profile img {
-    padding-top: 3rem;
     width: 25%;
+    padding-top: 0;
 }
 .profile h1 {
     color: rgb(255, 255, 255);
