@@ -1,0 +1,183 @@
+/*----- FONTS -----*/
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/*----- ALL -----*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background: url(../resources/images/phone-background.png);
+}
+@media only screen and (min-width: 500px) {
+    body {
+        background: url(../resources/images/pc-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/*----- HERO -----*/
+@media only screen and (min-width: 500px) {
+    .hero {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*----- PROFILE -----*/
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile img {
+    width: 25%;
+    padding-top: 0;
+}
+.profile h1 {
+    color: rgb(255, 255, 255);
+    padding-top: 1.8rem;
+    font-size: 1.7rem;
+}
+@media only screen and (min-width: 500px) {
+    .profile {
+        flex-direction: row;
+    }
+    .profile img {
+        width: 18%;
+        padding-top: 1rem;
+        padding-left: 4rem;
+    }
+    .profile h1 {
+        font-size: 2.2rem;
+        padding-left: 2rem;
+    }
+}
+
+/*----- MAIN -----*/
+@media only screen and (min-width: 500px) {
+    .main-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 50%;
+        padding-left: 4rem;
+    }
+}
+
+/*----- CATEGORIES -----*/
+.categories-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.category {
+    background-color: white;
+    width: 70%;
+    padding: 1rem 0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.category a {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-left: 2.8rem;
+    text-decoration: none;
+    color: #000;
+}
+.category img {
+    width: 15%;
+    padding-left: 1.3rem;
+}
+@media only screen and (min-width: 500px) {
+    .categories-cont {
+        align-items: flex-start;
+        padding-left: 9rem;
+        margin-top: 4.5rem;
+    }
+    .category {
+        width: 70%;
+        transition: all 0.4s;
+    }
+    .category:hover {
+        background-color: rgb(218, 218, 218);
+    }
+    .category a {
+        font-size: 1.5rem;
+    }
+}
+
+/*----- SOCIAL -----*/
+.social-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-top: 2.7rem;
+    width: 80%;
+}
+.social-cont a {
+    color: white;
+    font-size: 1.8rem;
+}
+@media only screen and (min-width: 500px) {
+    .social-cont {
+        width: 70%;
+        padding-left: 6rem;
+    }
+    .social-cont a {
+        transition: all 0.3s;
+    }
+    .social-cont a:hover {
+        color: #9793ee;
+    }
+}
+
+/*----- CONTACT ME -----*/
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.7rem;
+}
+.contact-me a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.contact-me a i {
+    padding-left: 1.2rem;
+}
+@media only screen and (min-width: 500px) {
+    .contact-me {
+        justify-content: left;
+        padding-left: 14rem;
+        padding-top: 3rem;
+    }
+    .contact-me a {
+        transition: all 0.3s;
+        color: rgb(202, 202, 202);
+    }
+    .contact-me a:hover {
+        color: white;
+    }
+}
+
+/*----- ANIMATION -----*/
+.animation {
+    display: none;
+}
+@media only screen and (min-width: 500px) {
+    .animation {
+        display: flex;
+        padding: 14rem 0 0 13rem;
+    }
+}
